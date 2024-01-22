@@ -3,8 +3,9 @@
 
 
 ## I. Recreate websites
-- [Original](https://treact.owaiskhan.me/components/landingPages/SaaSProductLandingPage) : original website that being used as a practice.
-- [TReact](https://nguyencatnguyen.github.io/Projects/TReact/index.html) : link to the project website.
+- <a href="https://treact.owaiskhan.me/components/landingPages/SaaSProductLandingPage" target="_blank">Link</a>: original website that being used as a practice.
+- <a href="https://nguyencatnguyen.github.io/Projects/TReact/index.html" target="_blank">Link</a>: my version of the website.
+
 
 ### Project walkthrough
 - Create a basic HTML structure for the website.
