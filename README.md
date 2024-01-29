@@ -18,5 +18,6 @@
 
 ### Things that can be improved
 - Learn more about `BEM` methodology to name the classes.
+- Learn more about `SASS` to make the CSS code more readable and easier to maintain.
 
  

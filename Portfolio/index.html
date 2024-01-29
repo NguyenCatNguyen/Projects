@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Nguyen</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js" defer></script>
+    <script src="https://kit.fontawesome.com/6443be5758.js" crossorigin="anonymous"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+             emailjs.init("YBX7DhWf37wjV_Gln");
+        })();
+</script>
+</head>
+<body>
+    <section id="landing-page">
+        <nav>
+            <figure>
+                <img id="personal-logo" src="./Assets/8.png" alt="">
+            </figure>
+            <ul class="nav__link--list">
+                <li class="nav__link">
+                    <a href="#" class="
+                    nav__link--anchor
+                    link__hover-effect
+                    link__hover-effect--black
+                    ">About</a>
+                </li>
+                <li class="nav__link">
+                    <a href="#" class="
+                    nav__link--anchor
+                    link__hover-effect
+                    link__hover-effect--black
+                    ">Project</a>
+                </li>
+                <li class="nav__link">
+                    <a href="#" class="
+                    nav__link--anchor
+                    link__hover-effect
+                    link__hover-effect--black
+                    ">Contact</a>
+                </li>
+                <li class="nav__link click">
+                    <a href="#" class="
+                    nav__link--anchor
+                    link__hover-effect
+                    link__hover-effect--black
+                    "><i class="fas fa-adjust"></i></a>
+                </li>
+            </ul>
+
+        </nav>
+        <header class="header">
+            <div class="header__content">
+                <h1 class="title">Hi</h1>
+                <h1 class="title orange">I'm Cat Nguyen.</h1>
+                <p class="header__para">
+                    I'm a <strong class="orange">frontend software engineer</strong> with a strong passion for building
+                        visually stunning <span class="orange"> 3D websites</span> with beautiful UI/UX designs and creating responsive, high-performance 
+                        web applications that offer exceptional user experiences. 
+                    <br>
+                    hi
+                </p>
+                <div class="social__list">
+                    <a href="https://www.linkedin.com/in/cat-nguyen-626621235/" target="_blank" class="social_link click">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/NguyenCatNguyen" target="_blank" class="social_link click">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="./Assets/Cat_Resume.pdf" target="_blank" class="social_link click">
+                        <i class="fa-solid fa-file-pdf"></i>
+                    </a>
+                </div>
+
+            </div>
+        </header>
+        <button class="mail__btn click">
+            <i class="fa-solid fa-envelope"></i>
+        </button>
+        <a href="#project" class="scroll">
+            <div class="scroll__icon click"></div>
+        </a>
+        <div class="modal">
+            <div class="modal__half modal__about">
+                <h3 class="modal__title">Here a bit about me</h3>
+                <h4 class="modal__sub-title modal__sub-title--aboutme">Fronted Software Engineer</h4>
+                <p class="modal__para">
+                    I'm a frontend software
+
+                </p>
+                <div class="modal__languages">
+                    <figure class="modal__language">
+                        <img src="https://cdn-icons-png.flaticon.com/128/1183/1183671.png" alt="" class="modal__img">
+                        <span class="language__name">HTML</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img src="https://cdn-icons-png.flaticon.com/128/1078/1078407.png" alt="" class="modal__img">
+                        <span class="language__name">CSS</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img src="https://cdn-icons-png.flaticon.com/128/2621/2621217.png" alt="" class="modal__img">
+                        <span class="language__name">JavaScript</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img src="https://cdn-icons-png.flaticon.com/128/1048/1048877.png" alt="" class="modal__img">
+                        <span class="language__name">React</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img src="https://cdn-icons-png.flaticon.com/128/1822/1822899.png" alt="" class="modal__img">
+                        <span class="language__name">Python</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img src="https://cdn-icons-png.flaticon.com/128/9544/9544010.png" alt="" class="modal__img">
+                        <span class="language__name">SQL</span>
+                    </figure>
+                </div>
+            </div>
+            <div class="modal__half modal__contact">
+                <h3 class="modal__title modal__title--contact">Let's have a chat!</h3>
+                <h4 class="modal__sub-title modal__sub-title--contact">I'm currently open to new oppotunity</h4>
+                <form onsubmit="contact(event)" id="contact__form">
+                    <div class="form_item">
+                        <label class="form__item--label">Name</label>
+                        <input type="text" class="input" name="user_name" ></input>
+                    </div>
+                    <div class="form_item">
+                        <label class="form__item--label">Email</label>
+                        <input type="email" class="input" name="user_email" ></input>
+                    </div>
+                    <div class="form_item">
+                        <label class="form__item--label">Message</label>
+                        <textarea type="text" class="input" name="message" ></textarea>
+                    </div>
+                    <button id="contact__submit" class="form__submit">
+                        Send it my way
+                    </button>
+                </form>
+                <div class="modal__overlay modal__overlay--loading">
+                    <i class="fa-solid fa-snowflake"></i>
+                </div>
+                <div class="modal__overlay modal__overlay--success">
+                    Thank you for the message! Looking forward to speaking to you soon.
+                </div>
+            </div>
+            <i class="fa-solid fa-xmark modal__exit click"></i>
+
+        </div>
+    </section>
+    <section id="project">
+        <div class="container">
+            <div class="row">
+                <h1 class="section__title">
+                    Here are some of my <span class="orange">projects.</span>
+                </h1>
+                <ul class="project__list">
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img src="./Assets/MockUP.png" alt="" class="project__img">
+                            <div class="project__wrapper--bg"></div>
+                            <div class="project__description">
+                                <h3 class="project__description--title">
+                                    Landing Page Project
+                                </h3>
+                                <h4 class="project__description--sub-title">
+                                    HTML, CSS, JavaScript
+                                </h4>
+                                <p class="project__description--para">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi doloribus cupiditate voluptatibus, culpa, laborum fugiat nulla harum libero a iste architecto ad fuga ullam nostrum reprehenderit minus fugit dolorum, tempora quod rem corporis sed.
+                                </p>
+                                <div class="project__description--links">
+                                    <a href="" class="project__description--link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="" class="project__description--link">
+                                        <i class="fa-solid fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row footer__row">
+                <figure>
+                    <img src="./Assets/9.png" alt="" class="footer__logo--img">
+                </figure>
+                <div class="footer__social--list">
+                    <a href="" class="
+                    footer__social--link
+                    link__hover-effect
+                    link__hover-effect--white
+                    ">GitHub</a>
+                    <a href="" class="
+                    footer__social--link
+                    link__hover-effect
+                    link__hover-effect--white
+                    ">LinkedIn</a>
+                    <a href="" class="
+                    footer__social--link
+                    link__hover-effect
+                    link__hover-effect--white
+                    ">Contact</a>
+                    <a href="" class="
+                    footer__social--link
+                    link__hover-effect
+                    link__hover-effect--white
+                    ">Resume</a>
+                </div>
+                <div class="footer__copyright">Copyright @ 2024 Cat Nguyen</div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
