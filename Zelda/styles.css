@@ -40,7 +40,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: 30px;
+    padding: 10px 50px;
     background-color: black;
 }
 
@@ -54,11 +54,33 @@ nav{
     margin-left: 10px;
 }
 
+
+/* CATEGORY BUTTON */
+.category__List{
+    background-color: var(--bg--);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 24px 50px;
+}
+
+.category{
+    padding: 10px;
+    transition: all ease-in 200ms;
+}
+
+.category:hover,
+.button__select{
+    filter: brightness(1.2);
+    transform: scale(1.1) ;
+}
+
+
 /* ENTRIES CARD */
 
 .entries__lists{
     display: flex;
-    padding: 40px;
+    padding: 20px;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -66,8 +88,8 @@ nav{
 .entries__card{
     display: flex;
     flex-direction: column;
-    border: solid 0px transparent;
-    width: calc(100%/6);
+    border: solid 5px transparent;
+    width: calc(100%/6.2);
     min-width: 250px;
     border-radius: 15px;
     overflow: hidden;
@@ -79,11 +101,15 @@ nav{
 
 .entries__card:hover {
     transform: translateY(-20px);
-    border: solid 2px var(--highlightColor--);
+    border-color: var(--bg--);
 }
 
 .entries__card:hover .entry__name{
-    color: #dd6d1d;
+    color: #0F68B8;
+}
+
+.entries__card:hover .entry__id{
+    background-color: black;
 }
 
 .entry__info{
@@ -91,19 +117,13 @@ nav{
 }
 
 .entry__name{
-    font-size: 30px;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    font-size: 24px;
+    text-transform: capitalize;
     transition: all ease-in-out 300ms;
 }
 
-.entry__category{
-    color: var(--bg--);
-    font-size: 16px;
-}
-
 .entry__id{
-    font-size: 24px;
+    font-size: 16px;
     border: 3px solid var(--bg--);
     background-color: var(--bg--);
     color: var(--blueHighlight--);
@@ -113,6 +133,7 @@ nav{
     padding: 3px 10px;
     font-weight: bold;
     margin-bottom: 10px;
+    transition: all ease-in-out 300ms;
 
 }
 
