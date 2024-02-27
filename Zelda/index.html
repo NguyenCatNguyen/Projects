@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/6443be5758.js" crossorigin="anonymous"></script>
     <title>The Legend of Zelda</title>
 </head>
 <body>
@@ -29,6 +30,14 @@
         </nav>
     </header>
     <main>
+        <section class="landing" onclick="start_function()">
+            <img src="./Assets/Zelda_loading.gif" class="landing__logo" alt="">
+            <h1 class="title">Zelda Wiki: Your Portal to Hyrule</h1>
+            <p class="sub-title">Looking for something specific? You've come to the right place. All the compendium 
+                you seek, in one convenient location. Start exploring by browsing categories or searching for a specific 
+                entry by name or ID.</p>
+            <button class="start_btn">Get Start</button>
+        </section>
         <section class="category__List">
             <div class="category">
                 <img src="./Assets/icon/Creatures.png" id="creatureButton" alt="" class="category__img">
@@ -45,6 +54,9 @@
             <div class="category">
                 <img src="./Assets/icon/Treasure.png"  id="treasureButton" alt="" class="category__img">
             </div>
+        </section>
+        <section class="loading__state">
+            <img src="./Assets/loading.gif" class="loading__img" alt="">
         </section>
         <section class="entries">
             <div class="entries__lists"> 

@@ -10,8 +10,7 @@
 ## Features
 
 ## What I Learned
-### API
-#### 1 Learn how to use API to fetch data from the server
+### 1 Learn how to use API to fetch data from the server
 - I learn that the data I receive from the server is in a object format, so I need to convert it to an array to use the array methods.
 ```javascript
 // Varible to access the entries list
@@ -27,8 +26,15 @@ async function main(){
 }
 ```
 
-### Array
-#### 1. Sort an array of objects by a property value
+### 2. Sort an array of objects by a property value
 ```javascript
 const sortedData = data.sort((a, b) => a.name.localeCompare(b.name));
 ```
+
+### 3. How to make category button more dynamic and reusable
+- Set the button to be able to change the category when clicked and also remain active
+- Be able to select and unselect the button.
+- There are two case when button is unselected:
+    - Another button is being selected and cause the current button to be unselected.
+    - The current button is being unselected and the full data is being displayed. 
+```javascript
