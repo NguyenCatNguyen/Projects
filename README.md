@@ -34,7 +34,7 @@
 - Implement the data using an API.
 
 ### III. Portfolio
-🔗 <a href="https://nguyencatnguyen.github.io/Projects/03-Portfolio/index.html" target="_blank">Portfolio</a>
+🔗 <a href="https://nguyencatnguyen.github.io/CatNguyen/index.html" target="_blank">Portfolio</a>
 
 💻 `HTML5` `CSS` `JavaScript`
 
@@ -47,7 +47,7 @@
 - Implement a more elaborate design with animations and transitions.
 
 ### IV. Zelda Wiki
-🔗 <a href="https://nguyencatnguyen.github.io/Projects/04-ZeldaWiki/index.html" target="_blank">Zelda Wiki</a>
+🔗 <a href="https://nguyencatnguyen.github.io/Zelda-Wiki/index.html" target="_blank">Zelda Wiki</a>
 
 💻 `HTML5` `CSS` `JavaScript` `API`
 
